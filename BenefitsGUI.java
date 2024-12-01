@@ -5,7 +5,7 @@
 package climateapp;
 
 /**
- *
+ *I ceated a new GUI 
  * @author Linru Wang
  */
 public class BenefitsGUI extends javax.swing.JFrame {

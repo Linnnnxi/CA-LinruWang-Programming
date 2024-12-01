@@ -7,7 +7,7 @@ package climateapp;
 import java.util.ArrayList;
 
 /**
- * for thr same design I will change as same other memebrs in the end
+ * I edited mt GUI design and added arraylist
  *
  * @author Linru Wang
  */
@@ -250,11 +250,11 @@ public class ClimateGUI extends javax.swing.JFrame {
             String activityString = (String) activityCB.getSelectedItem();
             int activityLevel = Integer.parseInt(activityString.split(" ")[0].trim());
 
-            // Calculate emissions (using CarbonTracker logic)
-            double emissions = activityLevel * 6.5; // Example calculation
-
+            CarbonTracker carbonTracker = new CarbonTracker("Climate Action Message", "User Name", "0000000000", activityLevel);
+            double totalEmissions = carbonTracker.calculateEmissions(activityLevel);
+            
             // Display result in the text area
-            messageTA.append("Estimated Emissions: " + emissions + " kg CO2\n");
+            messageTA.append("Estimated Emissions: " + totalEmissions + " kg CO2\n");
         } catch (NumberFormatException e) {
             messageTA.append("Invalid input for activity level. Please select a valid option.\n");
         } catch (Exception e) {

@@ -11,7 +11,7 @@ package climateapp;
 public class Benefits extends Climate {
 
     // Constructor
-    public Benefits(String message, String userName, String phoneNumber, int activityLevel) {    
+    public Benefits(String message, String userName, String phoneNumber, int activityLevel) {
         super(message, userName, phoneNumber, activityLevel);
     }
 
@@ -22,13 +22,6 @@ public class Benefits extends Climate {
 
     // Method to provide personalized tips based on user activity level
     public String getPersonalizedTips() {
-        // Return personalized tips based on activity level
-        if (activityLevel <= 3) {
-            return "Tips: Try increasing your activity levels by walking, cycling, or using public transportation.";
-        } else if (activityLevel <= 7) {
-            return "Tips: Consider using energy-efficient appliances, reducing waste, and making sustainable choices.";
-        } else {
-            return "Tips: Excellent! Keep reducing emissions with eco-friendly choices, and consider planting trees or using renewable energy.";
-        }
+        return "Tips: Try increasing your activity levels by walking, cycling, or using public transportation.";
     }
 }

@@ -6,15 +6,15 @@ package climateapp;
 
 import java.io.Serializable;
 
-/**
+/**I edited my variables to camelcase 
  * @author Linru Wang
  */
 public class Climate implements Serializable {
 
-    protected String message;  // The message to be displayed
-    protected String userName; // User's name
-    protected String phoneNumber; // User's phone number
-    protected int activityLevel; // User's activity level
+    protected String message;  
+    protected String userName; 
+    protected String phoneNumber; 
+    protected int activityLevel; 
 
     // Constructor
     public Climate(String message, String userName, String phoneNumber, int activityLevel) {
@@ -34,21 +34,19 @@ public class Climate implements Serializable {
         return "Hello " + userName + "! " + message + " Your activity level is " + activityLevel + ".";
     }
 
-    // Getter for userName
+    // Getters
     public String getUserName() {
         return userName;
     }
 
-    // Getter for phoneNumber
     public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    // Getter for activityLevel
     public int getActivityLevel() {
         return activityLevel;
     }
-
+    //setters
     public void setUserName(String userName) {
         this.userName = userName;
     }
