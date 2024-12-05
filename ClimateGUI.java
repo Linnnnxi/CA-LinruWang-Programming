@@ -7,7 +7,7 @@ package climateapp;
 import java.util.ArrayList;
 
 /**
- * I edited mt GUI design and added arraylist
+ * I edited my GUI design and added arraylist
  *
  * @author Linru Wang
  */
@@ -201,9 +201,6 @@ public class ClimateGUI extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(102, 102, 102)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(68, 68, 68)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(pnTF, javax.swing.GroupLayout.PREFERRED_SIZE, 260, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -219,7 +216,10 @@ public class ClimateGUI extends javax.swing.JFrame {
                                     .addComponent(benBtn)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                     .addComponent(exitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(78, 78, 78)
+                        .addComponent(jLabel1)))
                 .addContainerGap(250, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(

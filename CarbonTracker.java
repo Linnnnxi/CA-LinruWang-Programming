@@ -20,7 +20,7 @@ public class CarbonTracker extends Climate {
 
     // Method to calculate emissions based on user activity level
     public double calculateEmissions(int activityLevel) {
-        this.totalEmissions = activityLevel * 6.5; // Calculate based on activity level
+        this.totalEmissions = activityLevel * 6.5; // an example
         return totalEmissions;
     }
 

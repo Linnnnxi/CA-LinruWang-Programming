@@ -5,7 +5,8 @@
 package climateapp;
 
 /**
- *I ceated a new GUI 
+ * I created a new GUI
+ *
  * @author Linru Wang
  */
 public class BenefitsGUI extends javax.swing.JFrame {
@@ -127,28 +128,29 @@ public class BenefitsGUI extends javax.swing.JFrame {
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         // TODO add your handling code here:
         this.setVisible(false);
-        
+
         ClimateGUI myGUI = new ClimateGUI();
         myGUI.setVisible(true);
     }//GEN-LAST:event_backBtnActionPerformed
 
     private void generateBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_generateBtnActionPerformed
         // TODO add your handling code here:
-        String userName = ""; 
-        String phoneNumber = "";  
-        int activityLevel = 0;  
+        String userName = "";
+        String phoneNumber = "";
+        int activityLevel = 0;
 
         // Create an instance of the Benefits class
         Benefits benefit = new Benefits("Climate Action", userName, phoneNumber, activityLevel);
 
         // Check which radio button is selected
         if (benefitsRb.isSelected()) {
-            // Get and display the general benefits of reducing carbon footprint
-            String generalBenefits = benefit.getGeneralBenefits();
-            updateTA.setText(generalBenefits);  // Display general benefits in the text area
+            // Get and display a random general benefit
+            String randomBenefit = benefit.getRandomGeneralBenefit();
+            updateTA.setText(randomBenefit);
         } else if (tipsRb.isSelected()) {
-            String personalizedTips = benefit.getPersonalizedTips();
-            updateTA.setText(personalizedTips); 
+            // Get and display a random personalized tip
+            String randomTip = benefit.getRandomPersonalizedTip();
+            updateTA.setText(randomTip);
         } else {
             updateTA.setText("Please select either Benefits or Tips.");
         }
