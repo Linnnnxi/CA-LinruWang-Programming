@@ -17,11 +17,11 @@ public class Benefits extends Climate {
 
     // Method to provide general benefits of reducing carbon footprint
     public String getGeneralBenefits() {
-        return "Reducing your carbon footprint helps slow climate change, improves air quality, protects wildlife, mitigates disasters, and conserves resources.";
+        return "Reducing your carbon footprint helps slow climate change, \n improves air quality, protects wildlife, mitigates disasters, \n and conserves resources.";
     }
 
     // Method to provide personalized tips based on user activity level
     public String getPersonalizedTips() {
-        return "Tips: Try increasing your activity levels by walking, cycling, or using public transportation.";
+        return "Tips: \n Try increasing your activity levels by walking, cycling, \n or using public transportation.";
     }
 }
